@@ -9,38 +9,67 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Top 100 Movies For Developer Geeks</title>
+    <title>Top 100 Movies For Programmers</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
-    <style type="text/css" media="screen">
+    <style type="text/css">
 
 
         header {
             text-align: center;
             background-color:#1c262f;
-            padding:80px 0 60px 0;
+            padding:20px 0 20px 0;
             font-family: 'Francois One', sans-serif;
         }
         header h1.center-block {
-            font-size: 120px;
+            font-size: 40px;
             color:#37c8b9;
-            padding-bottom:30px;
+            padding-bottom:10px;
+            font-family: 'Francois One', sans-serif;
         }
         header .glyphicon {
-            font-size: 70px;
+            font-size: 30px;
             padding:5px;
         }
         body {
         background-color:#1c262f;
         color: white;
-        font-family: 'Francois One', sans-serif;
+        font-size:15px;
+        font-family: 'Open Sans', sans-serif;
         color:#37c8b9;
+        }
+
+        body .small-text {
+            font-size:12px;
+        }
+        body .large-text {
+            font-size:18px;
+        }
+
+        .movie-tile h2{
+            margin-top:0px;
+            font-family: 'Francois One', sans-serif;
+        }
+        .director {
+        padding-top:25px;
+        }
+
+        .left_column {
+        padding-bottom: 25px;
+        }
+
+        a:hover, a:focus {
+            color: #1c262f;
+        }
+        a {
+            color: #37c8b9;
         }
 
         #trailer .modal-dialog {
@@ -59,10 +88,16 @@ main_page_head = '''
             height: 100%;
         }
         .movie-tile {
+            padding-bottom: 35px;
+            padding-top: 35px;
             margin-bottom: 20px;
-            padding-top: 20px;
         }
         .movie-tile:hover {
+            background-color: #37c8b9;
+            cursor: pointer;
+            color:#1c262f;
+        }
+        .movie-tile:hover a{
             background-color: #37c8b9;
             cursor: pointer;
             color:#1c262f;
@@ -80,7 +115,67 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
+
+
+
+@media only screen and (min-width : 480px) {
+    header h1.center-block {
+        font-size: 60px;
+        padding-bottom:15px;
+         }
+     header .glyphicon {
+         font-size: 40px;
+         }
+header {
+        padding:40px 0 40px 0;
+    }
+
+@media only screen and (min-width : 768px) {
+    header h1.center-block {
+        font-size: 80px;
+        padding-bottom:20px;
+         }
+     header .glyphicon {
+         font-size: 50px;
+         }
+    header {
+            padding:40px 0 40px 0;
+        }
+    .left_column {
+        padding-bottom: 0px;
+        }
+}
+
+@media only screen and (min-width : 992px) {
+    header h1.center-block {
+        font-size: 100px;
+        padding-bottom:25px;
+         }
+     header .glyphicon {
+         font-size: 60px;
+         }
+    header {
+            padding:50px 0 50px 0;
+        }
+}
+@media only screen and (min-width : 1200px) {
+    header h1.center-block {
+        font-size: 120px;
+        padding-bottom:30px;
+         }
+     header .glyphicon {
+         font-size: 70px;
+         }
+    header {
+            padding:60px 0 60px 0;
+        }
+
+}
+
+
     </style>
+
+
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
@@ -89,7 +184,7 @@ main_page_head = '''
             $("#trailer-video-container").empty();
         });
         // Start playing the video whenever the trailer modal is opened
-        $(document).on('click', '.movie-tile', function (event) {
+        $(document).on('click', '.open', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
             var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
             $("#trailer-video-container").empty().append($("<iframe></iframe>", {
@@ -117,7 +212,7 @@ main_page_content = '''
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="center-block">Top 100 Movies For Developer Geeks</h1>
+                    <h1 class="center-block">Top 100 Movies For Programmers</h1>
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 </div>
             </div>
@@ -154,22 +249,34 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-6 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-<div class="row">
-<div class="col-md-6 col-lg-6 text-center">
-    <img src="{poster_image_url}" width="220" height="342">
-</div>
-<div class="col-md-6 col-lg-6 text-center">
-    <h2>{movie_title}</h2>
-    <p>{movie_rating}</p>
-    <p>({movie_year}), {movie_time} mins</p>
-    <p>{movie_storyline}</p>
 
-    <p>{movie_director}</p>
-    <p>{movie_stars}</p>
-    <p><a href="{movie_imdb_link}">Read more at IMDB</a></p>
-</div>
-</div>
+<div class="col-sm-12 col-md-6 col-lg-6 movie-tile text-center">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 text-center open left_column" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+            <img src="{poster_image_url}" width="220" height="342">
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-6 text-center">
+            <div class="row open" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+                <div class="col-md-12 col-lg-12 text-center">
+                    <h2>{movie_title}</h2>
+                    <p class="small-text">({movie_year}), {movie_time} mins</p>
+                    <p class="large-text">{movie_rating}</p>
+                    <p>{movie_storyline}</p>
+                    <div class="director">
+                        <p class="small-text">Director: {movie_director}</p>
+                        <p class="small-text">Stars: {movie_stars}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-md-12 col-lg-12 text-center">
+                    <a href="{movie_imdb_link}"  class="btn-lg btn-block">Read more at IMDB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 '''
 
