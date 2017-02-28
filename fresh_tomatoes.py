@@ -41,7 +41,7 @@ main_page_head = '''
         body {
         background-color:#1c262f;
         color: white;
-        font-size:15px;
+        font-size:14px;
         font-family: 'Open Sans', sans-serif;
         color:#37c8b9;
         }
@@ -57,8 +57,12 @@ main_page_head = '''
             margin-top:0px;
             font-family: 'Francois One', sans-serif;
         }
+
+        .movie-tile h2.small_h2 {
+        font-size: 25px;
+        }
         .director {
-        padding-top:25px;
+        padding-top:5px;
         }
 
         .left_column {
@@ -88,8 +92,8 @@ main_page_head = '''
             height: 100%;
         }
         .movie-tile {
-            padding-bottom: 35px;
-            padding-top: 35px;
+            padding-bottom: 30px;
+            padding-top: 30px;
             margin-bottom: 20px;
         }
         .movie-tile:hover {
@@ -212,7 +216,7 @@ main_page_content = '''
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="center-block">Top 100 Movies For Programmers</h1>
+                    <h1 class="center-block">Top 30 Movies For Programmers</h1>
                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 </div>
             </div>
@@ -259,7 +263,7 @@ movie_tile_content = '''
         <div class="col-sm-6 col-md-6 col-lg-6 text-center">
             <div class="row open" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
                 <div class="col-md-12 col-lg-12 text-center">
-                    <h2>{movie_title}</h2>
+                    {movie_title}
                     <p class="small-text">({movie_year}), {movie_time} mins</p>
                     <p class="large-text">{movie_rating}</p>
                     <p>{movie_storyline}</p>
@@ -296,9 +300,16 @@ def create_movie_tiles_content(movies):
         # create film number to display in tile
         film_number += 1
 
+        '''This is a fix for long file names. Where length of movie title is greater
+           than 27 we insert a class which we can then style to make font smaller'''
+        size = len(movie.title)
+        if size > 27:
+            title_class = "small_h2"
+        else:
+            title_class = "normal_h2"
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
-            movie_title = "<span>" + str(film_number)+ ".</span>" + " " + movie.title,
+            movie_title = '''<h2 class="''' + title_class + '''"><span>''' + str(film_number)+ ".</span>" + " " + movie.title + "</h2>",
             poster_image_url = movie.poster_image_url,
             trailer_youtube_id = trailer_youtube_id,
             movie_storyline = movie.storyline,
