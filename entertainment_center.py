@@ -1,23 +1,18 @@
 import fresh_tomatoes
 import media
 
-toy_story = media.Movie("Toy Story", "A story of a boy and his toys that come to life",
-                         "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
-                         "https://www.youtube.com/watch?v=KYz2wyBy3kc")
-avatar = media.Movie("Avatar", "A marine on an alien planet",
-                     "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",
-                     "https://www.youtube.com/watch?v=d1_JBMrrYw8")
-alien = media.Movie("Alien", "An alien on a human spaceship kills everyone",
-                     "https://upload.wikimedia.org/wikipedia/en/c/c3/Alien_movie_poster.jpg",
-                     "https://www.youtube.com/watch?v=bEVY_lonKf4")
-school_of_rock = media.Movie("School of Rock", "Rock singer substitutes at prestigious rock school",
-                     "https://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg",
-                     "https://www.youtube.com/watch?v=XCwy6lW5Ixc")
-ratatouille = media.Movie("Ratatouille", "Computer animated garbage about a mouse.",
-                     "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
-                     "https://www.youtube.com/watch?v=niD-jahFURU")
-hunger_games = media.Movie("Hunger Games", "A tale of deadly games in a post-apocalyptic future",
-                     "https://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
-                     "https://www.youtube.com/watch?v=4S9a5V9ODuY")
+the_matrix = media.Movie("The Matrix",
+                         "1999",
+                         4,
+                         136,
+                         "The Wachowski Brothers",
+                         "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving",
+                         "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+                         "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+                         "https://www.youtube.com/watch?v=a94b1yZOBes",
+                         "http://www.imdb.com/title/tt0133093/"
+                         )
 
-movies = [toy_story, avatar, alien, school_of_rock, ratatouille, hunger_games]
+
+movies = [the_matrix]
+fresh_tomatoes.open_movies_page(movies)

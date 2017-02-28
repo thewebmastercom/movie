@@ -9,17 +9,40 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>Top 100 Movies For Developer Geeks</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
     <style type="text/css" media="screen">
-        body {
-            padding-top: 80px;
+
+
+        header {
+            text-align: center;
+            background-color:#1c262f;
+            padding:80px 0 60px 0;
+            font-family: 'Francois One', sans-serif;
         }
+        header h1.center-block {
+            font-size: 120px;
+            color:#37c8b9;
+            padding-bottom:30px;
+        }
+        header .glyphicon {
+            font-size: 70px;
+            padding:5px;
+        }
+        body {
+        background-color:#1c262f;
+        color: white;
+        font-family: 'Francois One', sans-serif;
+        color:#37c8b9;
+        }
+
         #trailer .modal-dialog {
             margin-top: 200px;
             width: 640px;
@@ -40,8 +63,9 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #37c8b9;
             cursor: pointer;
+            color:#1c262f;
         }
         .scale-media {
             padding-bottom: 56.25%;
@@ -88,6 +112,18 @@ main_page_head = '''
 
 # The main page layout and title bar
 main_page_content = '''
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="center-block">Top 100 Movies For Developer Geeks</h1>
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
   <body>
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
@@ -105,17 +141,6 @@ main_page_content = '''
     <!-- Main Page Content -->
 
 
-    <div class="container">
-
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
 
 
 
@@ -129,15 +154,28 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-6 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+<div class="row">
+<div class="col-md-6 col-lg-6 text-center">
     <img src="{poster_image_url}" width="220" height="342">
+</div>
+<div class="col-md-6 col-lg-6 text-center">
     <h2>{movie_title}</h2>
+    <p>{movie_rating}</p>
+    <p>({movie_year}), {movie_time} mins</p>
+    <p>{movie_storyline}</p>
+
+    <p>{movie_director}</p>
+    <p>{movie_stars}</p>
+    <p><a href="{movie_imdb_link}">Read more at IMDB</a></p>
+</div>
+</div>
 </div>
 '''
 
-
 def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
+    film_number = 0
     content = ''
     for movie in movies:
         # Extract the youtube ID from the url
@@ -148,11 +186,21 @@ def create_movie_tiles_content(movies):
         trailer_youtube_id = (youtube_id_match.group(0) if youtube_id_match
                               else None)
 
+        # create film number to display in tile
+        film_number += 1
+
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
-            movie_title=movie.title,
-            poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+            movie_title = "<span>" + str(film_number)+ ".</span>" + " " + movie.title,
+            poster_image_url = movie.poster_image_url,
+            trailer_youtube_id = trailer_youtube_id,
+            movie_storyline = movie.storyline,
+            movie_year = movie.year,
+            movie_rating = movie.rating * '''<span class="glyphicon glyphicon-star" aria-hidden="true"></span>''',
+            movie_time = movie.time,
+            movie_director = movie.director,
+            movie_stars = movie.stars,
+            movie_imdb_link = movie.imdb_link
         )
     return content
 
