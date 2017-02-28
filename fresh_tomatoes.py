@@ -21,26 +21,27 @@ main_page_head = '''
 
     <style type="text/css">
 
-
         header {
             text-align: center;
             background-color:#1c262f;
             padding:20px 0 20px 0;
             font-family: 'Francois One', sans-serif;
         }
+
         header h1.center-block {
             font-size: 40px;
             color:#37c8b9;
             padding-bottom:10px;
             font-family: 'Francois One', sans-serif;
         }
+
         header .glyphicon {
             font-size: 30px;
             padding:5px;
         }
+
         body {
         background-color:#1c262f;
-        color: white;
         font-size:14px;
         font-family: 'Open Sans', sans-serif;
         color:#37c8b9;
@@ -49,6 +50,7 @@ main_page_head = '''
         body .small-text {
             font-size:12px;
         }
+
         body .large-text {
             font-size:18px;
         }
@@ -61,6 +63,7 @@ main_page_head = '''
         .movie-tile h2.small_h2 {
         font-size: 25px;
         }
+
         .director {
         padding-top:5px;
         }
@@ -72,6 +75,7 @@ main_page_head = '''
         a:hover, a:focus {
             color: #1c262f;
         }
+
         a {
             color: #37c8b9;
         }
@@ -81,35 +85,42 @@ main_page_head = '''
             width: 640px;
             height: 480px;
         }
+
         .hanging-close {
             position: absolute;
             top: -12px;
             right: -12px;
             z-index: 9001;
         }
+
         #trailer-video {
             width: 100%;
             height: 100%;
         }
+
         .movie-tile {
             padding-bottom: 30px;
             padding-top: 30px;
             margin-bottom: 20px;
         }
+
         .movie-tile:hover {
             background-color: #37c8b9;
             cursor: pointer;
             color:#1c262f;
         }
+
         .movie-tile:hover a{
             background-color: #37c8b9;
             cursor: pointer;
             color:#1c262f;
         }
+
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
         }
+
         .scale-media iframe {
             border: none;
             height: 100%;
@@ -120,64 +131,79 @@ main_page_head = '''
             background-color: white;
         }
 
+        @media only screen and (min-width : 480px) {
 
+            header h1.center-block {
+                font-size: 60px;
+                padding-bottom:15px;
+            }
 
-@media only screen and (min-width : 480px) {
-    header h1.center-block {
-        font-size: 60px;
-        padding-bottom:15px;
-         }
-     header .glyphicon {
-         font-size: 40px;
-         }
-header {
-        padding:40px 0 40px 0;
-    }
+            header .glyphicon {
+                font-size: 40px;
+            }
 
-@media only screen and (min-width : 768px) {
-    header h1.center-block {
-        font-size: 80px;
-        padding-bottom:20px;
-         }
-     header .glyphicon {
-         font-size: 50px;
-         }
-    header {
-            padding:40px 0 40px 0;
-        }
-    .left_column {
-        padding-bottom: 0px;
-        }
-}
+        header {
+                padding:40px 0 40px 0;
+            }
 
-@media only screen and (min-width : 992px) {
-    header h1.center-block {
-        font-size: 100px;
-        padding-bottom:25px;
-         }
-     header .glyphicon {
-         font-size: 60px;
-         }
-    header {
-            padding:50px 0 50px 0;
-        }
-}
-@media only screen and (min-width : 1200px) {
-    header h1.center-block {
-        font-size: 120px;
-        padding-bottom:30px;
-         }
-     header .glyphicon {
-         font-size: 70px;
-         }
-    header {
-            padding:60px 0 60px 0;
         }
 
-}
+        @media only screen and (min-width : 768px) {
 
+            header h1.center-block {
+                font-size: 80px;
+                padding-bottom:20px;
+            }
 
-    </style>
+             header .glyphicon {
+                font-size: 50px;
+             }
+
+            header {
+                padding:40px 0 40px 0;
+            }
+
+            .left_column {
+                padding-bottom: 0px;
+            }
+
+        }
+
+        @media only screen and (min-width : 992px) {
+
+            header h1.center-block {
+                font-size: 100px;
+                padding-bottom:25px;
+            }
+
+            header .glyphicon {
+                font-size: 60px;
+            }
+
+            header {
+                padding:50px 0 50px 0;
+            }
+
+        }
+
+        @media only screen and (min-width : 1200px) {
+
+            header h1.center-block {
+                font-size: 120px;
+                padding-bottom:30px;
+            }
+
+            header .glyphicon {
+                font-size: 70px;
+            }
+
+            header {
+                padding:60px 0 60px 0;
+            }
+
+        }
+
+</style>
 
 
     <script type="text/javascript" charset="utf-8">
@@ -212,16 +238,20 @@ header {
 # The main page layout and title bar
 main_page_content = '''
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="center-block">Top 30 Movies For Programmers</h1>
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </div>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="center-block">Top 30 Movies For Programmers</h1>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
   <body>
     <!-- Trailer Video Modal -->
@@ -297,11 +327,12 @@ def create_movie_tiles_content(movies):
         trailer_youtube_id = (youtube_id_match.group(0) if youtube_id_match
                               else None)
 
-        # create film number to display in tile
+        '''Create film number to display in tile'''
         film_number += 1
 
-        '''This is a fix for long file names. Where length of movie title is greater
-           than 27 we insert a class which we can then style to make font smaller'''
+        '''This is a fix for long file names. Where length of movie title is \
+        greater than 27 we insert a class which we can then style to make font \
+        smaller'''
         size = len(movie.title)
         if size > 27:
             title_class = "small_h2"

@@ -2,7 +2,9 @@ import webbrowser
 
 class Movie():
 
-    def __init__(self, movie_title, movie_year, movie_rating, movie_time, movie_director, movie_stars, movie_storyline, poster_image, trailer_youtube, imdb_link):
+    def __init__(self, movie_title, movie_year, movie_rating, movie_time,
+                 movie_director, movie_stars, movie_storyline,
+                 poster_image, trailer_youtube, imdb_link):
         self.title = movie_title
         self.year = movie_year
         self.rating = movie_rating
