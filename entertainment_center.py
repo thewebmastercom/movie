@@ -2,20 +2,20 @@ import fresh_tomatoes
 import media
 
 '''
-A list of variables for the Movie Class:
-    - title
-    - year released
-    - rating from 1 to 5
-    - time of movie in minutes
-    - director
-    - stars
-    - summary
-    - poster image
-    - youtube URL to trailer
-    - link to IMDB
-'''
+    movie_title (str): Title of movie.
+    movie_year (int): Year movie released.
+    movie_rating (int): Rating of movie from 1 to 5.
+    movie_time (int): Time of movie in minutes.
+    movie_director (str): Director(s) of the movie. Add multiple with
+                          commas.
+    movie_stars (str): Star(s) of the movie. Add multiple with commas.
+    movie_storyline (str): Summary of the movie. Keep to < 130 chars.
+    poster_image (str): The URL of the poster image.
+    trailer_youtube (str):YouTube URL to trailer.
+    imdb_link (str): URL to Movie IMDB page.
+    '''
 
-the_matrix = media.Movie( \
+the_matrix = media.Movie(
     "The Matrix",
     "1999",
     4,
@@ -28,7 +28,7 @@ the_matrix = media.Movie( \
     "https://www.youtube.com/watch?v=a94b1yZOBes",
     "http://www.imdb.com/title/tt0133093/")
 
-ghost_in_the_shell = media.Movie( \
+ghost_in_the_shell = media.Movie(
     "Ghost in the Shell",
     "1995",
     4,
@@ -37,11 +37,12 @@ ghost_in_the_shell = media.Movie( \
     "Atsuko Tanaka, Iemasa Kayumi, Akio Otsuka, Koichi Yamadera",
     "A cyborg policewoman and her partner hunt a mysterious and powerful \
     hacker called the Puppet Master.",
-    "https://upload.wikimedia.org/wikipedia/en/1/11/Ghost_in_the_Shell_%282017_film%29.png",
+    "https://upload.wikimedia.org/wikipedia/en/1/11/"
+    "Ghost_in_the_Shell_%282017_film%29.png",
     "https://www.youtube.com/watch?v=SvBVDibOrgs",
     "http://www.imdb.com/title/tt0113568/")
 
-the_girl_with_the_dragon_tatoo = media.Movie( \
+the_girl_with_the_dragon_tatoo = media.Movie(
     "The Girl with the Dragon Tattoo",
     "2009",
     4,
@@ -50,12 +51,13 @@ the_girl_with_the_dragon_tatoo = media.Movie( \
     "Michael Nyqvist, Noomi Rapace, Ewa Froling, Lena Endre",
     "A journalist is aided in his search for a woman who has been missing -- \
     or dead -- for forty years by a young female hacker.",
-    "https://upload.wikimedia.org/wikipedia/en/8/80/The_Girl_with_the_Dragon_Tattoo_Poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/8/80/"
+    "The_Girl_with_the_Dragon_Tattoo_Poster.jpg",
     "https://www.youtube.com/watch?v=RL8LI-h2WFc",
     "http://www.imdb.com/title/tt1132620/"
     )
 
-minority_report = media.Movie( \
+minority_report = media.Movie(
     "Minority Report",
     "2002",
     4,
@@ -64,12 +66,13 @@ minority_report = media.Movie( \
     "Tom Cruise, Colin Farrell, Samantha Morton, Max von Sydow",
     "An officer from a special unit who arrests murderers before they commit \
     their crimes, is himself accused of a future murder.",
-    "https://upload.wikimedia.org/wikipedia/en/4/44/Minority_Report_Poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/4/44/"
+    "Minority_Report_Poster.jpg",
     "https://www.youtube.com/watch?v=jdl6eAIx2K4",
     "http://www.imdb.com/title/tt0181689/"
     )
 
-snowden = media.Movie( \
+snowden = media.Movie(
     "Snowden",
     "2016",
     5,
@@ -83,7 +86,7 @@ snowden = media.Movie( \
     "http://www.imdb.com/title/tt3774114/"
     )
 
-the_internship = media.Movie( \
+the_internship = media.Movie(
     "The Internship",
     "2013",
     3,
@@ -97,7 +100,7 @@ the_internship = media.Movie( \
     "http://www.imdb.com/title/tt2234155/"
     )
 
-twenty_three = media.Movie( \
+twenty_three = media.Movie(
     "23",
     "1998",
     3,
@@ -111,7 +114,7 @@ twenty_three = media.Movie( \
     "http://www.imdb.com/title/tt0126765/"
     )
 
-sneakers = media.Movie( \
+sneakers = media.Movie(
     "Sneakers",
     "1992",
     3,
@@ -125,7 +128,7 @@ sneakers = media.Movie( \
     "http://www.imdb.com/title/tt0105435/"
     )
 
-wargames = media.Movie( \
+wargames = media.Movie(
     "WarGames",
     "1983",
     4,
@@ -139,7 +142,7 @@ wargames = media.Movie( \
     "http://www.imdb.com/title/tt0086567/"
     )
 
-the_thirteenth_floor = media.Movie( \
+the_thirteenth_floor = media.Movie(
     "The Thirteenth Floor",
     "1999",
     3,
@@ -148,12 +151,13 @@ the_thirteenth_floor = media.Movie( \
     "Craig Bierko, Gretchen Mol, Armin Mueller-Stahl, Vincent D'Onofrio",
     "Computer scientist Hannon Fuller has discovered something important. \
     He's about to tell his colleague...",
-    "https://upload.wikimedia.org/wikipedia/en/0/02/The_Thirteenth_Floor_poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/0/02/"
+    "The_Thirteenth_Floor_poster.jpg",
     "https://www.youtube.com/watch?v=dtYdZkPmFoU",
     "http://www.imdb.com/title/tt0139809/"
     )
 
-existenz = media.Movie( \
+existenz = media.Movie(
     "eXistenZ",
     "1999",
     3,
@@ -167,7 +171,7 @@ existenz = media.Movie( \
     "http://www.imdb.com/title/tt0120907/"
     )
 
-tron = media.Movie( \
+tron = media.Movie(
     "TRON",
     "1982",
     4,
@@ -181,7 +185,7 @@ tron = media.Movie( \
     "http://www.imdb.com/title/tt0084827/"
     )
 
-underground = media.Movie( \
+underground = media.Movie(
     "Underground: The Julian Assange Story",
     "2012",
     3,
@@ -194,7 +198,7 @@ underground = media.Movie( \
     "http://www.imdb.com/title/tt2357453/"
     )
 
-wierd_science = media.Movie( \
+wierd_science = media.Movie(
     "Weird Science",
     "1985",
     5,
@@ -203,12 +207,13 @@ wierd_science = media.Movie( \
     "Anthony Michael Hall, Ilan Mitchell-Smith, Kelly LeBrock, Bill Paxton",
     "Two high school nerds attempt to create the perfect woman, but she turns \
     out to be more than that.",
-    "https://upload.wikimedia.org/wikipedia/en/d/d6/Movie_poster_for_Weird_Science_%281985%29.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/d/d6/"
+    "Movie_poster_for_Weird_Science_%281985%29.jpg",
     "https://www.youtube.com/watch?v=25q3hxlgvw4",
     "http://www.imdb.com/title/tt0090305/"
     )
 
-eagle_eye = media.Movie( \
+eagle_eye = media.Movie(
     "Eagle Eye",
     "2008",
     3,
@@ -222,7 +227,7 @@ eagle_eye = media.Movie( \
     "http://www.imdb.com/title/tt1059786/"
     )
 
-swordfish = media.Movie( \
+swordfish = media.Movie(
     "Swordfish",
     "2001",
     3,
@@ -236,7 +241,7 @@ swordfish = media.Movie( \
     "http://www.imdb.com/title/tt0244244/"
     )
 
-takedown = media.Movie( \
+takedown = media.Movie(
     "Takedown",
     "2000",
     2,
@@ -250,7 +255,7 @@ takedown = media.Movie( \
     "http://www.imdb.com/title/tt0159784/"
     )
 
-hackers = media.Movie( \
+hackers = media.Movie(
     "Hackers",
     "1995",
     3,
@@ -264,7 +269,7 @@ hackers = media.Movie( \
     "http://www.imdb.com/title/tt0113243/"
     )
 
-the_fifth_estate = media.Movie( \
+the_fifth_estate = media.Movie(
     "The Fifth Estate",
     "2013",
     4,
@@ -273,12 +278,13 @@ the_fifth_estate = media.Movie( \
     "Benedict Cumberbatch, Daniel Bruhl, Carice van Houten",
     "The story behind Wikileaks, one of the 21st century's most \
     fiercely debated organizations.",
-    "https://upload.wikimedia.org/wikipedia/en/0/0a/The_Fifth_Estate_poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/0/0a/"
+    "The_Fifth_Estate_poster.jpg",
     "https://www.youtube.com/watch?v=ZT1wb8_tcYU",
     "http://www.imdb.com/title/tt1837703/"
     )
 
-onepoint0 = media.Movie( \
+onepoint0 = media.Movie(
     "One Point O",
     "2002",
     3,
@@ -287,12 +293,13 @@ onepoint0 = media.Movie( \
     "Richard Rees, Jeremy Sisto, Udo Kier, Deborah Kara Unger",
     "After receiving mysterious empty packages inside his apartment, a young \
     computer-programmer investigates.",
-    "https://upload.wikimedia.org/wikipedia/en/1/11/Paranoia_1point0_poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/1/11/"
+    "Paranoia_1point0_poster.jpg",
     "https://www.youtube.com/watch?v=rw3V_VnRoaA",
     "http://www.imdb.com/title/tt0317042/"
     )
 
-antitrust = media.Movie( \
+antitrust = media.Movie(
     "Antitrust",
     "2001",
     3,
@@ -306,7 +313,7 @@ antitrust = media.Movie( \
     "http://www.imdb.com/title/tt0218817/"
     )
 
-the_computer_wore_tennis_shoes = media.Movie( \
+the_computer_wore_tennis_shoes = media.Movie(
     "The Computer Wore Tennis Shoes",
     "1969",
     5,
@@ -315,12 +322,13 @@ the_computer_wore_tennis_shoes = media.Movie( \
     "Kurt Russell, Cesar Romero, Joe Flynn, William Schallert",
     "College students persuade the town's big businessman to \
     donate a computer to their college.",
-    "https://upload.wikimedia.org/wikipedia/en/7/73/Computer_wore_tennis_shoes_ver1.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/7/73/"
+    "Computer_wore_tennis_shoes_ver1.jpg",
     "https://www.youtube.com/watch?v=DtCTKMQSCOo",
     "http://www.imdb.com/title/tt0065566/"
     )
 
-the_net = media.Movie( \
+the_net = media.Movie(
     "The Net",
     "1995",
     2,
@@ -334,7 +342,7 @@ the_net = media.Movie( \
     "http://www.imdb.com/title/tt0113957/"
     )
 
-gamer = media.Movie( \
+gamer = media.Movie(
     "Gamer",
     "2009",
     3,
@@ -348,7 +356,7 @@ gamer = media.Movie( \
     "http://www.imdb.com/title/tt1034032/"
     )
 
-firewall = media.Movie( \
+firewall = media.Movie(
     "Firewall",
     "2006",
     3,
@@ -362,7 +370,7 @@ firewall = media.Movie( \
     "http://www.imdb.com/title/tt0408345/"
     )
 
-virtuosity = media.Movie( \
+virtuosity = media.Movie(
     "Virtuosity",
     "1995",
     2,
@@ -376,7 +384,7 @@ virtuosity = media.Movie( \
     "http://www.imdb.com/title/tt0114857/"
     )
 
-algorithm = media.Movie( \
+algorithm = media.Movie(
     "Algorithm",
     "2014",
     1,
@@ -390,7 +398,7 @@ algorithm = media.Movie( \
     "http://www.imdb.com/title/tt0181689/"
     )
 
-the_social_network = media.Movie( \
+the_social_network = media.Movie(
     "The Social Network",
     "2010",
     5,
@@ -399,12 +407,13 @@ the_social_network = media.Movie( \
     "Jesse Eisenberg, Andrew Garfield, Justin Timberlake",
     "Harvard student Mark Zuckerberg creates the social networking site \
     Facebook",
-    "https://upload.wikimedia.org/wikipedia/en/7/7a/Social_network_film_poster.jpg",
+    "https://upload.wikimedia.org/wikipedia/en/7/7a/"
+    "Social_network_film_poster.jpg",
     "https://www.youtube.com/watch?v=lB95KLmpLR4",
     "http://www.imdb.com/title/tt1285016/"
     )
 
-middle_men = media.Movie( \
+middle_men = media.Movie(
     "Middle Men",
     "2002",
     4,
@@ -418,7 +427,7 @@ middle_men = media.Movie( \
     "http://www.imdb.com/title/tt1251757/"
     )
 
-pirates_of_silicon_valley = media.Movie( \
+pirates_of_silicon_valley = media.Movie(
     "Pirates of Silicon Valley",
     "1999",
     3,
@@ -431,12 +440,14 @@ pirates_of_silicon_valley = media.Movie( \
     "http://www.imdb.com/title/tt0168122/"
     )
 
-movies = [the_matrix,ghost_in_the_shell,the_girl_with_the_dragon_tatoo,
-    minority_report,snowden,the_internship,twenty_three,sneakers,
-    wargames,the_thirteenth_floor,existenz,tron,underground,
-    wierd_science,eagle_eye,swordfish,takedown,hackers,the_fifth_estate,
-    onepoint0,antitrust,the_computer_wore_tennis_shoes,the_net,gamer,firewall,
-    virtuosity,algorithm,the_social_network,middle_men,
-    pirates_of_silicon_valley]
+movies = [
+    the_matrix, ghost_in_the_shell, the_girl_with_the_dragon_tatoo,
+    minority_report, snowden, the_internship, twenty_three, sneakers,
+    wargames, the_thirteenth_floor, existenz, tron, underground,
+    wierd_science, eagle_eye, swordfish, takedown, hackers, the_fifth_estate,
+    onepoint0, antitrust, the_computer_wore_tennis_shoes, the_net, gamer,
+    firewall, virtuosity, algorithm, the_social_network, middle_men,
+    pirates_of_silicon_valley
+    ]
 
 fresh_tomatoes.open_movies_page(movies)

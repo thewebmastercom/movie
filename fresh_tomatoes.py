@@ -12,12 +12,21 @@ main_page_head = '''
     <title>Top 100 Movies For Programmers</title>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="
+    https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="
+    https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css
+    ">
+    <link href="
+    https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="
+    https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js">
+    </script>
+    <script src="
+    https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js">
+    </script>
 
     <style type="text/css">
 
@@ -208,16 +217,20 @@ main_page_head = '''
 
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal',
+        function (event) {
+            // Remove the src so the player itself gets removed, as this
+            // is the only reliable way to ensure the video
+            //  stops playing in IE
             $("#trailer-video-container").empty();
         });
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.open', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+            var sourceUrl = 'http://www.youtube.com/embed/' +
+            trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>",
+            {
               'id': 'trailer-video',
               'type': 'text-html',
               'src': sourceUrl,
@@ -243,11 +256,16 @@ main_page_content = '''
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="center-block">Top 30 Movies For Programmers</h1>
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true">
+                </span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true">
+                </span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true">
+                </span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true">
+                </span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true">
+                </span>
             </div>
         </div>
     </div>
@@ -258,8 +276,11 @@ main_page_content = '''
     <div class="modal" id="trailer">
       <div class="modal-dialog">
         <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          <a href="#" class="hanging-close" data-dismiss="modal"
+          aria-hidden="true">
+            <img src="
+            https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24
+            "/>
           </a>
           <div class="scale-media" id="trailer-video-container">
           </div>
@@ -286,12 +307,16 @@ movie_tile_content = '''
 
 <div class="col-sm-12 col-md-6 col-lg-6 movie-tile text-center">
     <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6 text-center open left_column" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+        <div class="col-sm-6 col-md-6 col-lg-6 text-center open left_column"
+        data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal"
+        data-target="#trailer">
             <img src="{poster_image_url}" width="220" height="342">
         </div>
 
         <div class="col-sm-6 col-md-6 col-lg-6 text-center">
-            <div class="row open" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+            <div class="row open"
+            data-trailer-youtube-id="{trailer_youtube_id}"
+            data-toggle="modal" data-target="#trailer">
                 <div class="col-md-12 col-lg-12 text-center">
                     {movie_title}
                     <p class="small-text">({movie_year}), {movie_time} mins</p>
@@ -305,7 +330,8 @@ movie_tile_content = '''
             </div>
             <div class="row" >
                 <div class="col-md-12 col-lg-12 text-center">
-                    <a href="{movie_imdb_link}"  class="btn-lg btn-block">Read more at IMDB</a>
+                    <a href="{movie_imdb_link}"
+                    class="btn-lg btn-block">Read more at IMDB</a>
                 </div>
             </div>
         </div>
@@ -313,6 +339,7 @@ movie_tile_content = '''
 
 </div>
 '''
+
 
 def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
@@ -331,8 +358,8 @@ def create_movie_tiles_content(movies):
         film_number += 1
 
         '''This is a fix for long file names. Where length of movie title is \
-        greater than 27 we insert a class which we can then style to make font \
-        smaller'''
+        greater than 27 we insert a class which we can then style to make \
+        font smaller'''
         size = len(movie.title)
         if size > 27:
             title_class = "small_h2"
@@ -340,16 +367,18 @@ def create_movie_tiles_content(movies):
             title_class = "normal_h2"
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
-            movie_title = '''<h2 class="''' + title_class + '''"><span>''' + str(film_number)+ ".</span>" + " " + movie.title + "</h2>",
-            poster_image_url = movie.poster_image_url,
-            trailer_youtube_id = trailer_youtube_id,
-            movie_storyline = movie.storyline,
-            movie_year = movie.year,
-            movie_rating = movie.rating * '''<span class="glyphicon glyphicon-star" aria-hidden="true"></span>''',
-            movie_time = movie.time,
-            movie_director = movie.director,
-            movie_stars = movie.stars,
-            movie_imdb_link = movie.imdb_link
+            movie_title='''<h2 class="''' + title_class + '''"><span>''' +
+            str(film_number) + ".</span>" + " " + movie.title + "</h2>",
+            poster_image_url=movie.poster_image_url,
+            trailer_youtube_id=trailer_youtube_id,
+            movie_storyline=movie.storyline,
+            movie_year=movie.year,
+            movie_rating=movie.rating * '''<span class="glyphicon'''
+            ''' glyphicon-star" aria-hidden="true"></span>''',
+            movie_time=movie.time,
+            movie_director=movie.director,
+            movie_stars=movie.stars,
+            movie_imdb_link=movie.imdb_link
         )
     return content
 
