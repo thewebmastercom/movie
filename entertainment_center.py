@@ -13,7 +13,7 @@ import media
     poster_image (str): The URL of the poster image.
     trailer_youtube (str):YouTube URL to trailer.
     imdb_link (str): URL to Movie IMDB page.
-    '''
+'''
 
 the_matrix = media.Movie(
     "The Matrix",
@@ -440,7 +440,7 @@ pirates_of_silicon_valley = media.Movie(
     "http://www.imdb.com/title/tt0168122/"
     )
 
-movies = [
+movies = sorted([
     the_matrix, ghost_in_the_shell, the_girl_with_the_dragon_tatoo,
     minority_report, snowden, the_internship, twenty_three, sneakers,
     wargames, the_thirteenth_floor, existenz, tron, underground,
@@ -448,6 +448,6 @@ movies = [
     onepoint0, antitrust, the_computer_wore_tennis_shoes, the_net, gamer,
     firewall, virtuosity, algorithm, the_social_network, middle_men,
     pirates_of_silicon_valley
-    ]
+    ], key=lambda movie: movie.year, reverse=True)
 
 fresh_tomatoes.open_movies_page(movies)
