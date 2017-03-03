@@ -9,8 +9,21 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Top 100 Movies For Programmers</title>
-
+    <meta property="og:title" content="Top 30 Movies For Programmers">
+    <meta property="og:url" content="https://bestof.thewebmaster.com/top_30_movies_for_programmers.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Take a look at our top 30 movies for programmers, along with basic film information and trailers.">
+    <meta property="og:image" content="https://bestof.thewebmaster.com/assets/top-100-movies-for-programmers.jpg">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description" content="Take a look at our top 30 movies for programmers, along with basic film information and trailers."/>
+    <meta name="twitter:title" content="Top 30 Movies For Programmers"/>
+    <meta name="twitter:site" content="@thewebmastercom"/>
+    <meta name="twitter:image" content="https://bestof.thewebmaster.com/assets/top-100-movies-for-programmers.jpg"/>
+    <meta name="twitter:creator" content="@thewebmastercom"/>
+    <title>Top 30 Movies For Programmers</title>
+    <meta name="description" content="Take a look at our top 30 movies for programmers, along with basic film information and trailers.">
+    <meta name="robots" content="INDEX, FOLLOW, ARCHIVE">
+    <meta name="google-site-verification" content="4hP9BbkZgnQSEf2hWN7kvjjnjc2AU5ktn3LoROVbWZs" />
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="
     https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css
@@ -27,7 +40,26 @@ main_page_head = '''
     <script src="
     https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js">
     </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-92963729-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="application/ld+json">
+
+    {
+      "@context": "http://schema.org",
+      "@type": "WebPage",
+      "description": "Top 30 Movies For Programmers",
+
+    }
+
+    </script>
     <style type="text/css">
 
         header {
@@ -385,7 +417,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
     # Create or overwrite the output file
-    output_file = open('fresh_tomatoes.html', 'w')
+    output_file = open('top_30_movies_for_programmers.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(

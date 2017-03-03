@@ -24,7 +24,7 @@ the_matrix = media.Movie(
     "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving",
     "A computer hacker learns from mysterious rebels about the true nature of \
     his reality and his role in the war against its controllers.",
-    "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+    "https://bestof.thewebmaster.com/assets/The_Matrix_Poster.jpg",
     "https://www.youtube.com/watch?v=a94b1yZOBes",
     "http://www.imdb.com/title/tt0133093/")
 
@@ -81,7 +81,7 @@ snowden = media.Movie(
     "Joseph Gordon-Levitt, Shailene Woodley, Melissa Leo",
     "The NSA's illegal surveillance techniques are leaked to the public by one \
     of the agency's employees, Edward Snowden.",
-    "https://upload.wikimedia.org/wikipedia/en/c/ca/Snowden_film_poster.jpg",
+    "https://bestof.thewebmaster.com/assets/Snowden_film_poster.jpg",
     "https://www.youtube.com/watch?v=QlSAiI3xMh4",
     "http://www.imdb.com/title/tt3774114/"
     )
@@ -95,7 +95,7 @@ the_internship = media.Movie(
     "Vince Vaughn, Owen Wilson, Rose Byrne",
     "Two salesmen whose careers have been torpedoed by the digital age find \
     their way into a coveted internship at Google.",
-    "https://upload.wikimedia.org/wikipedia/en/e/ed/The-internship-poster.jpg",
+    "https://bestof.thewebmaster.com/assets/The-internship-poster.jpg",
     "https://www.youtube.com/watch?v=cdnoqCViqUo",
     "http://www.imdb.com/title/tt2234155/"
     )
@@ -109,7 +109,7 @@ twenty_three = media.Movie(
     "August Diehl, Fabian Busch, Dieter Landuris, Jan-Gregor Kremp",
     "The movie's plot is based on the true story of a group of young computer \
     hackers from Hannover, Germany.",
-    "https://upload.wikimedia.org/wikipedia/en/4/4e/23MovieFrenchDVDCover.jpg",
+    "https://bestof.thewebmaster.com/assets/23MovieFrenchDVDCover.jpg",
     "https://www.youtube.com/watch?v=be_uVIM8tyM",
     "http://www.imdb.com/title/tt0126765/"
     )
@@ -123,7 +123,7 @@ sneakers = media.Movie(
     "Robert Redford, Dan Aykroyd, Sidney Poitier, Jo Marr",
     "A security pro's past comes back to haunt him, when he is tasked with \
     retrieving a particularly important item.",
-    "https://upload.wikimedia.org/wikipedia/en/a/aa/Sneakersmovie.jpg",
+    "https://bestof.thewebmaster.com/assets/Sneakersmovie.jpg",
     "https://www.youtube.com/watch?v=rbJpx_6fYgE",
     "http://www.imdb.com/title/tt0105435/"
     )
@@ -137,7 +137,7 @@ wargames = media.Movie(
     "Matthew Broderick, Ally Sheedy, John Wood, Dabney Coleman",
     "A young man finds a back door into a military central computer in which \
     reality is confused with game-playing, possibly starting World War III. ",
-    "https://upload.wikimedia.org/wikipedia/en/2/29/Wargames.jpg",
+    "https://bestof.thewebmaster.com/assets/Wargames.jpg",
     "https://www.youtube.com/watch?v=tAcEzhQ7oqA",
     "http://www.imdb.com/title/tt0086567/"
     )
@@ -166,7 +166,7 @@ existenz = media.Movie(
     "Jude Law, Jennifer Jason Leigh, Ian Holm, Willem Dafoe",
     "A game designer on the run from assassins plays her latest virtual \
     reality creation to determine if the game has been damaged.",
-    "https://upload.wikimedia.org/wikipedia/en/7/76/EXISTENZ.jpg",
+    "https://bestof.thewebmaster.com/assets/EXISTENZ.jpg",
     "https://www.youtube.com/watch?v=HAdbdUt_h9M",
     "http://www.imdb.com/title/tt0120907/"
     )
@@ -180,7 +180,7 @@ tron = media.Movie(
     "Jeff Bridges, Bruce Boxleitner, David Warner, Cindy Morgan",
     "computer hacker is abducted into the digital world and forced to \
     participate in gladiatorial games with the help of a security program",
-    "https://upload.wikimedia.org/wikipedia/en/1/17/Tron_poster.jpg",
+    "https://bestof.thewebmaster.com/assets/Tron_poster.jpg",
     "https://www.youtube.com/watch?v=3efV2wqEjEY",
     "http://www.imdb.com/title/tt0084827/"
     )
@@ -193,7 +193,7 @@ underground = media.Movie(
     "Robert Connolly",
     "Rachel Griffiths, Anthony LaPaglia, Alex Williams, Laura Wheelwright",
     "A look at the early career of Wikileaks founder, Julian Assange.",
-    "https://www.thewebmaster.com/media/uploads/files/underground.jpg",
+    "https://bestof.thewebmaster.com/assets/underground.jpg",
     "https://www.youtube.com/watch?v=1ujDD2LpSRg",
     "http://www.imdb.com/title/tt2357453/"
     )
@@ -207,7 +207,7 @@ wierd_science = media.Movie(
     "Anthony Michael Hall, Ilan Mitchell-Smith, Kelly LeBrock, Bill Paxton",
     "Two high school nerds attempt to create the perfect woman, but she turns \
     out to be more than that.",
-    "https://upload.wikimedia.org/wikipedia/en/d/d6/"
+    "https://bestof.thewebmaster.com/assets/"
     "Movie_poster_for_Weird_Science_%281985%29.jpg",
     "https://www.youtube.com/watch?v=25q3hxlgvw4",
     "http://www.imdb.com/title/tt0090305/"
@@ -222,7 +222,7 @@ eagle_eye = media.Movie(
     "Shia LaBeouf, Michelle Monaghan, Rosario Dawson, Michael Chiklis",
     "Jerry and Rachel are two strangers thrown together by a mysterious \
     phone call from a woman they have never met. ",
-    "https://upload.wikimedia.org/wikipedia/en/1/15/Eagle_eye_poster.jpg",
+    "https://bestof.thewebmaster.com/assets/Eagle_eye_poster.jpg",
     "https://www.youtube.com/watch?v=_wkqo_Rd3_Q",
     "http://www.imdb.com/title/tt1059786/"
     )
@@ -236,7 +236,7 @@ swordfish = media.Movie(
     "John Travolta, Hugh Jackman, Halle Berry, Don Cheadle",
     "Gabriel brings in convicted hacker Stanley Jobson to help him to unlock \
     money to help fight terrorism.",
-    "https://upload.wikimedia.org/wikipedia/en/e/e8/Swordfish_movie.jpg",
+    "https://bestof.thewebmaster.com/assets/Swordfish_movie.jpg",
     "https://www.youtube.com/watch?v=mfLizCqjz18",
     "http://www.imdb.com/title/tt0244244/"
     )
@@ -250,7 +250,7 @@ takedown = media.Movie(
     "Skeet Ulrich, Russell Wong, Angela Featherstone, Donal Logue",
     "This film is based on the story of the capture of computer hacker \
     Kevin Mitnick.",
-    "https://upload.wikimedia.org/wikipedia/en/e/e5/Takedown_2000.jpg",
+    "https://bestof.thewebmaster.com/assets/Takedown_2000.jpg",
     "https://www.youtube.com/watch?v=NbgDMYy9mzM",
     "http://www.imdb.com/title/tt0159784/"
     )
@@ -264,7 +264,7 @@ hackers = media.Movie(
     "TJonny Lee Miller, Angelina Jolie, Jesse Bradford, Matthew Lillard",
     "Dade Murphy was a hacker even as a kid in Seattle. He got arrested for \
     the computer virus that he planted",
-    "https://upload.wikimedia.org/wikipedia/en/6/67/Hackersposter.jpg",
+    "https://bestof.thewebmaster.com/assets/Hackersposter.jpg",
     "https://www.youtube.com/watch?v=Rn2cf_wJ4f4",
     "http://www.imdb.com/title/tt0113243/"
     )
@@ -308,7 +308,7 @@ antitrust = media.Movie(
     "Ryan Phillippe, Tim Robbins, Rachael Leigh Cook, Claire Forlani",
     "A programmer discovers his boss has a secret and ruthless means of \
     dispatching anti-trust problems.",
-    "https://upload.wikimedia.org/wikipedia/en/2/2a/Antitrust_poster.jpg",
+    "https://bestof.thewebmaster.com/assets/Antitrust_poster.jpg",
     "https://www.youtube.com/watch?v=EMHF5LjY9EI",
     "http://www.imdb.com/title/tt0218817/"
     )
@@ -337,7 +337,7 @@ the_net = media.Movie(
     "Sandra Bullock, Jeremy Northam, Dennis Miller, Diane Baker",
     "A computer programmer stumbles upon a conspiracy, putting her life \
     in great danger.",
-    "https://upload.wikimedia.org/wikipedia/en/0/0d/Netposter1995.jpg",
+    "https://bestof.thewebmaster.com/assets/Netposter1995.jpg",
     "https://www.youtube.com/watch?v=46qKHq7REI4",
     "http://www.imdb.com/title/tt0113957/"
     )
@@ -351,7 +351,7 @@ gamer = media.Movie(
     "Gerard Butler, Michael C. Hall, Ludacris, Amber Valletta",
     "In a future mind-controlling game, death row convicts battle in a \
     Doom-type environment to win freedom.",
-    "https://upload.wikimedia.org/wikipedia/en/f/fa/Gamermovie.jpg",
+    "https://bestof.thewebmaster.com/assets/Gamermovie.jpg",
     "https://www.youtube.com/watch?v=P2g94xQmtHw",
     "http://www.imdb.com/title/tt1034032/"
     )
@@ -365,7 +365,7 @@ firewall = media.Movie(
     "Harrison Ford, Virginia Madsen, Paul Bettany, Carly Schroeder",
     "A security specialist is forced to rob the bank that he's \
     protecting to pay his family's ransom.",
-    "https://upload.wikimedia.org/wikipedia/en/a/a9/Firewall_2.jpg",
+    "https://bestof.thewebmaster.com/assets/Firewall_2.jpg",
     "https://www.youtube.com/watch?v=aLtVpOUEwnI",
     "http://www.imdb.com/title/tt0408345/"
     )
@@ -379,7 +379,7 @@ virtuosity = media.Movie(
     "Denzel Washington, Russell Crowe, Kelly Lynch, Stephen Spinella",
     "A virtual reality sim created using the personalities of serial killers \
     escapes into the real world",
-    "https://upload.wikimedia.org/wikipedia/en/1/13/Virtuosity_ver2.jpg",
+    "https://bestof.thewebmaster.com/assets/Virtuosity_ver2.jpg",
     "https://www.youtube.com/watch?v=8Qj4h_BZYIY",
     "http://www.imdb.com/title/tt0114857/"
     )
@@ -393,7 +393,7 @@ algorithm = media.Movie(
     "Raphael Barker, Keith Barletta, Julie Ceballos, Joey Devine",
     "A hacker discovers a mysterious government computer program. \
     He breaks in and is thrust into a revolution.",
-    "https://www.thewebmaster.com/media/uploads/files/algorithm_mPCiDFk.jpg",
+    "https://bestof.thewebmaster.com/assets/files/algorithm_mPCiDFk.jpg",
     "https://www.youtube.com/watch?v=tyTUVovCp5s",
     "http://www.imdb.com/title/tt0181689/"
     )
@@ -422,7 +422,7 @@ middle_men = media.Movie(
     "George Gallo, Andy Weiss",
     "Chronicles Jack Harris, one of the pioneers of internet commerce, \
     as he wrestles with his morals.",
-    "https://upload.wikimedia.org/wikipedia/en/7/7a/Middle_men_poster.jpg",
+    "https://bestof.thewebmaster.com/assets/Middle_men_poster.jpg",
     "https://www.youtube.com/watch?v=m3gcb_9Q10E",
     "http://www.imdb.com/title/tt1251757/"
     )
@@ -435,7 +435,7 @@ pirates_of_silicon_valley = media.Movie(
     "Martyn Burke",
     "Anthony Michael Hall, Noah Wyle, Joey Slotnick",
     "This is a biographical film about the men behind Apple and Microsoft.",
-    "https://upload.wikimedia.org/wikipedia/en/3/30/Movieposterposv.jpg",
+    "https://bestof.thewebmaster.com/assets/Movieposterposv.jpg",
     "https://www.youtube.com/watch?v=lEyrivrjAuU",
     "http://www.imdb.com/title/tt0168122/"
     )
@@ -448,6 +448,6 @@ movies = sorted([
     onepoint0, antitrust, the_computer_wore_tennis_shoes, the_net, gamer,
     firewall, virtuosity, algorithm, the_social_network, middle_men,
     pirates_of_silicon_valley
-    ], key=lambda movie: movie.year, reverse=True)
+    ], key=lambda movie: movie.rating, reverse=True)
 
 fresh_tomatoes.open_movies_page(movies)
