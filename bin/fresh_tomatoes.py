@@ -417,7 +417,7 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
     # Create or overwrite the output file
-    output_file = open('top_30_movies_for_programmers.html', 'w')
+    output_file = open('../top_30_movies_for_programmers.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
