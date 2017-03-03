@@ -393,7 +393,7 @@ algorithm = media.Movie(
     "Raphael Barker, Keith Barletta, Julie Ceballos, Joey Devine",
     "A hacker discovers a mysterious government computer program. \
     He breaks in and is thrust into a revolution.",
-    "https://bestof.thewebmaster.com/assets/files/algorithm_mPCiDFk.jpg",
+    "https://bestof.thewebmaster.com/assets/algorithm_mPCiDFk.jpg",
     "https://www.youtube.com/watch?v=tyTUVovCp5s",
     "http://www.imdb.com/title/tt0181689/"
     )
